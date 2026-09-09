@@ -1,0 +1,348 @@
+/* ==========================================================================
+   Nahla Nabil: personal site
+   Identity kit: Space Grotesk (headings) / IBM Plex Sans (body)
+   Ink #0B1F33, Paper #F6F7F4, Accent #2F5C82, Line #D8DBD3
+   ========================================================================== */
+
+:root {
+  --ink: #0B1F33;
+  --paper: #F6F7F4;
+  --accent: #2F5C82;
+  --line: #D8DBD3;
+  --ink-soft: #4A5568; /* softened body text, kept dark enough for contrast on paper */
+  --max-width: 720px;
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+}
+
+/* ---- Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: 'Space Grotesk', 'IBM Plex Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--ink);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---- Layout helpers ---- */
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-3);
+}
+
+.section {
+  padding: var(--space-6) 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-alt {
+  background: #EFF1EB; /* one step darker than paper, still within the given palette family */
+}
+
+/* ---- Accessibility: skip link ---- */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--ink);
+  color: var(--paper);
+  padding: var(--space-2);
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: var(--space-2);
+  top: var(--space-2);
+}
+
+/* ---- Header / nav ---- */
+.site-header {
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  z-index: 10;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+}
+
+.mark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mark:hover,
+.mark:focus-visible {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.site-nav {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.site-nav a {
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
+}
+
+/* ---- Hero ---- */
+.hero {
+  padding: var(--space-6) 0 var(--space-5);
+}
+
+.eyebrow {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-2);
+}
+
+.hero h1 {
+  font-size: clamp(28px, 5vw, 40px);
+  margin-bottom: var(--space-3);
+}
+
+.claim {
+  font-size: clamp(19px, 2.6vw, 23px);
+  color: var(--ink-soft);
+  max-width: 34ch;
+  margin-bottom: var(--space-4);
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ---- Section headings ---- */
+.section h2 {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: var(--space-4);
+}
+
+/* ---- Work / case card ---- */
+.case-card {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: var(--space-4);
+  background: var(--paper);
+}
+
+.case-label {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: var(--space-1);
+}
+
+.case-card h3 {
+  font-size: 24px;
+  margin-bottom: var(--space-2);
+}
+
+.case-card p:not(.case-label) {
+  color: var(--ink-soft);
+  margin-bottom: var(--space-3);
+}
+
+.read-more {
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* ---- About ---- */
+#about p {
+  color: var(--ink-soft);
+  max-width: 65ch;
+}
+
+/* ---- Contact ---- */
+.contact-intro {
+  color: var(--ink-soft);
+  margin-bottom: var(--space-4);
+}
+
+.contact-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.contact-list li:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  font-weight: 600;
+  min-width: 90px;
+  color: var(--ink);
+}
+
+.contact-list a {
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.contact-list a:hover,
+.contact-list a:focus-visible {
+  text-decoration: underline;
+}
+
+/* ---- Footer ---- */
+.site-footer {
+  border-top: 1px solid var(--line);
+  padding: var(--space-4) 0 var(--space-5);
+}
+
+.site-footer p {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+#flyrank-badge:not(:empty) {
+  margin-top: var(--space-2);
+}
+
+/* ---- Focus visibility (kept consistent across all interactive elements) ---- */
+a:focus-visible,
+.btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+  .header-inner {
+    padding-top: var(--space-2);
+    padding-bottom: var(--space-2);
+  }
+
+  .site-nav {
+    gap: var(--space-2);
+  }
+
+  .contact-label {
+    min-width: 100%;
+  }
+}
