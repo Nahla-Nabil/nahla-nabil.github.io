@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="agent.css">
@@ -38,43 +38,46 @@
   <main id="main">
     <section class="contact-hero">
       <div class="wrap">
-        <p class="eyebrow reveal">Contact</p>
-        <h1 class="reveal reveal-delay-1">Let's talk.</h1>
-        <p class="reveal reveal-delay-2">The fastest way to reach me is email, or book a short call directly.</p>
+        <p class="eyebrow-mono reveal">$ contact</p>
+        <h1 class="page-title reveal reveal-delay-1">Let's talk.</h1>
+        <p class="lede reveal reveal-delay-2">The fastest way to reach me is email, or book a short call directly.</p>
         <div class="cta-row reveal reveal-delay-3">
           <a class="btn btn-primary" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
           <!-- PLACEHOLDER: swap href="#" for the real booking link (e.g. Calendly) once set up -->
-          <a class="btn btn-outline-light" href="#" data-booking-link="placeholder">Book a call</a>
+          <a class="btn btn-outline" href="#" data-booking-link="placeholder">Book a call</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-flush">
       <div class="wrap">
-        <div class="contact-grid">
-          <div class="contact-card reveal">
-            <span class="contact-label">Email</span>
-            <a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a>
-          </div>
-          <div class="contact-card reveal reveal-delay-1">
-            <span class="contact-label">Book a call</span>
-            <!-- PLACEHOLDER: same booking link as elsewhere, keep in sync -->
-            <a href="#" data-booking-link="placeholder">Schedule a short call</a>
-          </div>
-          <div class="contact-card reveal reveal-delay-2">
-            <span class="contact-label">LinkedIn</span>
-            <!-- PLACEHOLDER: swap href="#" for the real public LinkedIn profile URL -->
-            <a href="#" data-linkedin-link="placeholder">nahla-nabil-876597211</a>
-          </div>
-          <div class="contact-card reveal reveal-delay-3">
-            <span class="contact-label">GitHub</span>
-            <a href="https://github.com/Nahla-Nabil">Nahla-Nabil</a>
-          </div>
-          <div class="contact-card reveal">
-            <span class="contact-label">CV</span>
-            <!-- PLACEHOLDER: swap href="#" for the real hosted CV link -->
-            <a href="#" data-cv-link="placeholder">Download CV</a>
-          </div>
+        <div class="config-block reveal">
+          <p class="config-file-tab">contact.yaml</p>
+          <dl class="config-list">
+            <div class="config-row">
+              <dt>email</dt>
+              <dd><a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a></dd>
+            </div>
+            <div class="config-row">
+              <dt>call</dt>
+              <!-- PLACEHOLDER: same booking link as elsewhere, keep in sync -->
+              <dd><a href="#" data-booking-link="placeholder">schedule a short call</a></dd>
+            </div>
+            <div class="config-row">
+              <dt>linkedin</dt>
+              <!-- PLACEHOLDER: swap href="#" for the real public LinkedIn profile URL -->
+              <dd><a href="#" data-linkedin-link="placeholder">nahla-nabil-876597211</a></dd>
+            </div>
+            <div class="config-row">
+              <dt>github</dt>
+              <dd><a href="https://github.com/Nahla-Nabil">Nahla-Nabil</a></dd>
+            </div>
+            <div class="config-row">
+              <dt>cv</dt>
+              <!-- PLACEHOLDER: swap href="#" for the real hosted CV link -->
+              <dd><a href="#" data-cv-link="placeholder">download</a></dd>
+            </div>
+          </dl>
         </div>
       </div>
     </section>

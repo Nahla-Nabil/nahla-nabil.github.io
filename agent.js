@@ -161,7 +161,7 @@
       recognizer.start();
       isListening = true;
       micBtn.dataset.listening = "true";
-      setStatus('<span class="agent-wave"><span></span><span></span><span></span></span> Listening&hellip;');
+      setStatus("Listening");
     } catch (err) {
       // start() throws if called twice in a row; safe to ignore.
     }
@@ -185,7 +185,7 @@
     addMessage("user", text);
     textInput.value = "";
     isSending = true;
-    setStatus("Thinking&hellip;");
+    setStatus("Thinking");
 
     if (!AGENT_ENDPOINT) {
       // The Worker has not been deployed/configured yet. Fail honestly

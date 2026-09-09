@@ -9,7 +9,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="agent.css">
@@ -42,42 +42,42 @@
       <div class="wrap">
         <div class="hero-layout">
           <div>
-            <p class="eyebrow reveal">Nahla Nabil</p>
-            <h1 class="reveal reveal-delay-1">Backend AI Engineering Intern</h1>
-            <p class="claim reveal reveal-delay-2">I build backend systems that make AI products reliable in production.</p>
-            <p class="role-line reveal reveal-delay-2">FlyRank AI Fluency &middot; Muharraq, Bahrain</p>
+            <p class="terminal-line reveal">nahla@backend:~$ whoami</p>
+            <h1 class="reveal reveal-delay-1">Nahla Nabil</h1>
+            <p class="role-line reveal reveal-delay-1">Backend AI Engineering Intern &middot; FlyRank AI Fluency &middot; Muharraq, Bahrain</p>
+            <blockquote class="claim reveal reveal-delay-2">I build backend systems that make AI products reliable in production.</blockquote>
             <div class="cta-row reveal reveal-delay-3">
               <a class="btn btn-primary" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
               <!-- PLACEHOLDER: swap href="#" for the real booking link (e.g. Calendly) once set up -->
-              <a class="btn btn-outline-light" href="#" data-booking-link="placeholder">Book a call</a>
+              <a class="btn btn-outline" href="#" data-booking-link="placeholder">Book a call</a>
             </div>
           </div>
           <!-- PLACEHOLDER: replace this initials avatar with a real photo, see README -->
           <div class="avatar reveal" aria-hidden="true">NN</div>
         </div>
 
-        <div class="panel reveal">
-          <p class="panel-label">How Shado answers a question</p>
-          <div class="pipeline">
-            <div class="pipeline-step">
-              <span class="step-index">1</span>
-              <span class="step-name">Retrieve</span>
+        <div class="trace reveal">
+          <p class="eyebrow-mono">// how Shado answers a question</p>
+          <div class="trace-flow">
+            <div class="trace-node">
+              <span class="trace-tag">[1]</span>
+              <span class="trace-name">retrieve</span>
               <p>Pull the most relevant chunks from the knowledge base.</p>
             </div>
-            <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
-            <div class="pipeline-step">
-              <span class="step-index">2</span>
-              <span class="step-name">Rerank</span>
+            <div class="trace-arrow" aria-hidden="true">&rarr;</div>
+            <div class="trace-node">
+              <span class="trace-tag">[2]</span>
+              <span class="trace-name">rerank</span>
               <p>Reorder candidates before anything reaches the model.</p>
             </div>
-            <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
-            <div class="pipeline-step">
-              <span class="step-index">3</span>
-              <span class="step-name">Ground</span>
+            <div class="trace-arrow" aria-hidden="true">&rarr;</div>
+            <div class="trace-node">
+              <span class="trace-tag">[3]</span>
+              <span class="trace-name">ground</span>
               <p>Generate an answer tied directly to the reranked evidence.</p>
             </div>
           </div>
-          <!-- PLACEHOLDER: swap this diagram for a real retriever.py snippet once ready to share -->
+          <!-- PLACEHOLDER: swap this trace for a real retriever.py snippet once ready to share -->
         </div>
       </div>
     </section>
@@ -87,23 +87,23 @@
       <div class="wrap">
         <div class="section-head reveal">
           <h2>Selected work</h2>
-          <p>Three pieces of proof, in order of how much of the work is fully mine.</p>
+          <p>Three pieces of proof, not a list of skills.</p>
         </div>
         <div class="card-grid">
           <a class="card reveal" href="work.html#shado">
-            <p class="card-label">Case study &middot; leads</p>
+            <p class="card-label">case study</p>
             <h3>Shado</h3>
             <p>A solo-built RAG pipeline. Gold at the Kanz AI Hackathon, a Guinness World Records-associated event with over 13,000 participants.</p>
             <span class="card-link">Read the case study &rarr;</span>
           </a>
           <a class="card reveal reveal-delay-1" href="work.html#agent-assignment-fix">
-            <p class="card-label">Case study</p>
+            <p class="card-label">case study</p>
             <h3>Agent Assignment Fix</h3>
             <p>A production judgment call inside DOO's CNCT project: human-handoff detection and smart ticket routing.</p>
             <span class="card-link">Read the case study &rarr;</span>
           </a>
           <a class="card reveal reveal-delay-2" href="about.html#publications">
-            <p class="card-label">Research</p>
+            <p class="card-label">research</p>
             <h3>IEEE Publications</h3>
             <p>Two published papers: Hybrid Edge-Cloud Federated Learning, and Random Forest Weight Auditing for Gulf Sustainability Indices.</p>
             <span class="card-link">See the publications &rarr;</span>
