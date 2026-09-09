@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nahla Nabil: Backend AI Engineering</title>
   <meta name="description" content="Nahla Nabil builds backend systems that make AI products reliable in production.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1F33'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23F6F7F4' text-anchor='middle'%3ENN%3C/text%3E%3C/svg%3E">
 
-  <!-- Identity kit fonts: Space Grotesk for headings, IBM Plex Sans for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="agent.css">
 </head>
 <body>
 
@@ -19,109 +20,119 @@
 
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="mark" href="#top" aria-label="Nahla Nabil, back to top">NN</a>
+      <a class="mark" href="index.html" aria-label="Nahla Nabil, home">NN</a>
       <nav class="site-nav" aria-label="Primary">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cta" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
+        </div>
       </nav>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- 1. HERO -->
-    <section id="top" class="hero">
+    <!-- HERO -->
+    <section class="hero">
       <div class="wrap">
-        <p class="eyebrow">Nahla Nabil</p>
-        <h1>Backend AI Engineering Intern</h1>
-        <p class="claim">I build backend systems that make AI products reliable in production.</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
-          <!-- PLACEHOLDER: swap href="#" for the real booking link (e.g. Calendly) once set up -->
-          <a class="btn btn-secondary" href="#" data-booking-link="placeholder">Book a call</a>
+        <div class="hero-layout">
+          <div>
+            <p class="eyebrow reveal">Nahla Nabil</p>
+            <h1 class="reveal reveal-delay-1">Backend AI Engineering Intern</h1>
+            <p class="claim reveal reveal-delay-2">I build backend systems that make AI products reliable in production.</p>
+            <p class="role-line reveal reveal-delay-2">FlyRank AI Fluency &middot; Muharraq, Bahrain</p>
+            <div class="cta-row reveal reveal-delay-3">
+              <a class="btn btn-primary" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
+              <!-- PLACEHOLDER: swap href="#" for the real booking link (e.g. Calendly) once set up -->
+              <a class="btn btn-outline-light" href="#" data-booking-link="placeholder">Book a call</a>
+            </div>
+          </div>
+          <!-- PLACEHOLDER: replace this initials avatar with a real photo, see README -->
+          <div class="avatar reveal" aria-hidden="true">NN</div>
+        </div>
+
+        <div class="panel reveal">
+          <p class="panel-label">How Shado answers a question</p>
+          <div class="pipeline">
+            <div class="pipeline-step">
+              <span class="step-index">1</span>
+              <span class="step-name">Retrieve</span>
+              <p>Pull the most relevant chunks from the knowledge base.</p>
+            </div>
+            <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+            <div class="pipeline-step">
+              <span class="step-index">2</span>
+              <span class="step-name">Rerank</span>
+              <p>Reorder candidates before anything reaches the model.</p>
+            </div>
+            <div class="pipeline-arrow" aria-hidden="true">&rarr;</div>
+            <div class="pipeline-step">
+              <span class="step-index">3</span>
+              <span class="step-name">Ground</span>
+              <p>Generate an answer tied directly to the reranked evidence.</p>
+            </div>
+          </div>
+          <!-- PLACEHOLDER: swap this diagram for a real retriever.py snippet once ready to share -->
         </div>
       </div>
     </section>
 
-    <!-- 2. WORK / CASE STUDY PREVIEW -->
-    <section id="work" class="section">
+    <!-- EVIDENCE ROW -->
+    <section class="section" id="work-preview">
       <div class="wrap">
-        <h2>Work</h2>
-        <article class="case-card">
-          <p class="case-label">Case study</p>
-          <h3>Shado</h3>
-          <p>
-            A retrieval-augmented generation pipeline built solo, awarded Gold at the Kanz AI
-            Hackathon, a Guinness World Records-associated event with over 13,000 participants.
-            Shado retrieves, ranks, and grounds its answers rather than guessing at them.
-          </p>
-          <!-- PLACEHOLDER: link to the full Shado case study once it is written and published -->
-          <a class="read-more" href="#" data-case-link="shado">Read more &rarr;</a>
-        </article>
-      </div>
-    </section>
-
-    <!-- 3. ABOUT -->
-    <section id="about" class="section section-alt">
-      <div class="wrap">
-        <h2>About</h2>
-        <p>
-          I am an AI undergraduate focused on the backend side of AI products: the retrieval,
-          the routing, the auth, and the failure handling that decide whether a system holds up
-          once it leaves a demo. During an internship at DOO, a customer messaging platform, I
-          worked on project CNCT, building human-handoff detection, smart ticket routing,
-          sentiment analysis, and a semantic FAQ engine backed by PostgreSQL with pgvector. I am
-          also a two-time published IEEE author, with papers on Hybrid Edge-Cloud Federated
-          Learning and Random Forest Weight Auditing for Gulf Sustainability Indices.
-        </p>
-      </div>
-    </section>
-
-    <!-- 4. CONTACT -->
-    <section id="contact" class="section">
-      <div class="wrap">
-        <h2>Contact</h2>
-        <p class="contact-intro">The fastest way to reach me is email, or book a short call directly.</p>
-        <ul class="contact-list">
-          <li>
-            <span class="contact-label">Email</span>
-            <a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a>
-          </li>
-          <li>
-            <span class="contact-label">Book a call</span>
-            <!-- PLACEHOLDER: same booking link as the hero CTA, keep both in sync -->
-            <a href="#" data-booking-link="placeholder">Schedule a short call</a>
-          </li>
-          <li>
-            <span class="contact-label">LinkedIn</span>
-            <!-- PLACEHOLDER: swap href="#" for the real public LinkedIn profile URL -->
-            <a href="#" data-linkedin-link="placeholder">linkedin.com/in/nahla-nabil-876597211</a>
-          </li>
-          <li>
-            <span class="contact-label">GitHub</span>
-            <a href="https://github.com/Nahla-Nabil">github.com/Nahla-Nabil</a>
-          </li>
-          <li>
-            <span class="contact-label">CV</span>
-            <!-- PLACEHOLDER: swap href="#" for the real hosted CV link (PDF, Drive, etc.) -->
-            <a href="#" data-cv-link="placeholder">Download CV</a>
-          </li>
-        </ul>
+        <div class="section-head reveal">
+          <h2>Selected work</h2>
+          <p>Three pieces of proof, in order of how much of the work is fully mine.</p>
+        </div>
+        <div class="card-grid">
+          <a class="card reveal" href="work.html#shado">
+            <p class="card-label">Case study &middot; leads</p>
+            <h3>Shado</h3>
+            <p>A solo-built RAG pipeline. Gold at the Kanz AI Hackathon, a Guinness World Records-associated event with over 13,000 participants.</p>
+            <span class="card-link">Read the case study &rarr;</span>
+          </a>
+          <a class="card reveal reveal-delay-1" href="work.html#agent-assignment-fix">
+            <p class="card-label">Case study</p>
+            <h3>Agent Assignment Fix</h3>
+            <p>A production judgment call inside DOO's CNCT project: human-handoff detection and smart ticket routing.</p>
+            <span class="card-link">Read the case study &rarr;</span>
+          </a>
+          <a class="card reveal reveal-delay-2" href="about.html#publications">
+            <p class="card-label">Research</p>
+            <h3>IEEE Publications</h3>
+            <p>Two published papers: Hybrid Edge-Cloud Federated Learning, and Random Forest Weight Auditing for Gulf Sustainability Indices.</p>
+            <span class="card-link">See the publications &rarr;</span>
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p>FlyRank AI Fluency Program</p>
-      <!-- This div is intentionally empty. It gets filled with the official FlyRank
-           completion badge image/markup once the capstone is approved. -->
-      <div id="flyrank-badge"></div>
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Nahla Nabil</p>
+        <p class="footer-meta">Muharraq, Bahrain &middot; <a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a></p>
+      </div>
+      <div>
+        <p class="footer-note">FlyRank AI Fluency Program</p>
+        <!-- This div is intentionally empty. It gets filled with the official FlyRank
+             completion badge image/markup once the capstone is approved. -->
+        <div id="flyrank-badge"></div>
+      </div>
     </div>
   </footer>
 
+  <!-- Ask Nahla: voice-enabled AI agent widget. See agent.js and worker/README.md. -->
+  <div id="agent-root"></div>
+
   <script src="script.js"></script>
+  <script src="agent.js"></script>
 </body>
 </html>

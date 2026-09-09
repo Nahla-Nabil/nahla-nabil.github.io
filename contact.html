@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahla Nabil: Contact</title>
+  <meta name="description" content="Email Nahla Nabil, book a short call, or find her on GitHub and LinkedIn.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1F33'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23F6F7F4' text-anchor='middle'%3ENN%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="agent.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="mark" href="index.html" aria-label="Nahla Nabil, home">NN</a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="work.html">Work</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-cta" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal">Contact</p>
+        <h1 class="reveal reveal-delay-1">Let's talk.</h1>
+        <p class="reveal reveal-delay-2">The fastest way to reach me is email, or book a short call directly.</p>
+        <div class="cta-row reveal reveal-delay-3">
+          <a class="btn btn-primary" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
+          <!-- PLACEHOLDER: swap href="#" for the real booking link (e.g. Calendly) once set up -->
+          <a class="btn btn-outline-light" href="#" data-booking-link="placeholder">Book a call</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <span class="contact-label">Email</span>
+            <a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a>
+          </div>
+          <div class="contact-card reveal reveal-delay-1">
+            <span class="contact-label">Book a call</span>
+            <!-- PLACEHOLDER: same booking link as elsewhere, keep in sync -->
+            <a href="#" data-booking-link="placeholder">Schedule a short call</a>
+          </div>
+          <div class="contact-card reveal reveal-delay-2">
+            <span class="contact-label">LinkedIn</span>
+            <!-- PLACEHOLDER: swap href="#" for the real public LinkedIn profile URL -->
+            <a href="#" data-linkedin-link="placeholder">nahla-nabil-876597211</a>
+          </div>
+          <div class="contact-card reveal reveal-delay-3">
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/Nahla-Nabil">Nahla-Nabil</a>
+          </div>
+          <div class="contact-card reveal">
+            <span class="contact-label">CV</span>
+            <!-- PLACEHOLDER: swap href="#" for the real hosted CV link -->
+            <a href="#" data-cv-link="placeholder">Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Nahla Nabil</p>
+        <p class="footer-meta">Muharraq, Bahrain &middot; <a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a></p>
+      </div>
+      <div>
+        <p class="footer-note">FlyRank AI Fluency Program</p>
+        <div id="flyrank-badge"></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="agent-root"></div>
+
+  <script src="script.js"></script>
+  <script src="agent.js"></script>
+</body>
+</html>

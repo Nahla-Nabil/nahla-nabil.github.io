@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nahla Nabil: About</title>
+  <meta name="description" content="Nahla Nabil, Backend AI Engineering intern: background, how she works, skills, and publications.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1F33'/%3E%3Ctext x='32' y='40' font-family='Georgia,serif' font-size='24' font-weight='700' fill='%23F6F7F4' text-anchor='middle'%3ENN%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="agent.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="mark" href="index.html" aria-label="Nahla Nabil, home">NN</a>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="work.html">Work</a>
+          <a href="about.html" aria-current="page">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="nav-cta" href="mailto:nahla.nabil.52@gmail.com">Email me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section section-flush">
+      <div class="wrap">
+        <div class="about-layout">
+          <!-- PLACEHOLDER: replace this initials avatar with a real photo, see README -->
+          <div class="avatar reveal" aria-hidden="true">NN</div>
+          <div>
+            <p class="eyebrow reveal">About</p>
+            <h1 class="page-title reveal reveal-delay-1">Nahla Nabil</h1>
+            <p class="lede reveal reveal-delay-2">
+              I am an AI undergraduate focused on the backend side of AI products: the
+              retrieval, the routing, the auth, and the failure handling that decide whether a
+              system holds up once it leaves a demo. During an internship at DOO, a customer
+              messaging platform, I worked on project CNCT, building human-handoff detection,
+              smart ticket routing, sentiment analysis, and a semantic FAQ engine backed by
+              PostgreSQL with pgvector. I am also a two-time published IEEE author, with papers
+              on Hybrid Edge-Cloud Federated Learning and Random Forest Weight Auditing for
+              Gulf Sustainability Indices.
+            </p>
+          </div>
+        </div>
+
+        <div class="voice-card reveal">
+          <p class="eyebrow">How I work</p>
+          <p>Direct, technical, research-minded, no fluff.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Skills</h2>
+          <p>What I have actually shipped with, not a wishlist.</p>
+        </div>
+        <ul class="skills-list reveal">
+          <li>Python</li>
+          <li>FastAPI</li>
+          <li>PostgreSQL</li>
+          <li>Redis</li>
+          <li>Docker</li>
+          <li>Supabase Auth</li>
+          <li>Retrieval-augmented generation</li>
+          <li>Semantic search</li>
+          <li>pgvector</li>
+          <li>Federated learning</li>
+          <li>Random forests</li>
+          <li>REST API design</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Publications</h2>
+          <p>Two IEEE papers. Links go live once each is confirmed publicly accessible.</p>
+        </div>
+        <ul class="pub-list reveal">
+          <li>
+            <span class="pub-title">Hybrid Edge-Cloud Federated Learning</span>
+            <!-- PLACEHOLDER: add the real IEEE Xplore / DOI link once confirmed -->
+            <a href="#" data-pub-link="fed-learning">View publication (placeholder) &rarr;</a>
+          </li>
+          <li>
+            <span class="pub-title">Random Forest Weight Auditing for Gulf Sustainability Indices</span>
+            <!-- PLACEHOLDER: add the real IEEE Xplore / DOI link once confirmed -->
+            <a href="#" data-pub-link="rf-auditing">View publication (placeholder) &rarr;</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Nahla Nabil</p>
+        <p class="footer-meta">Muharraq, Bahrain &middot; <a href="mailto:nahla.nabil.52@gmail.com">nahla.nabil.52@gmail.com</a></p>
+      </div>
+      <div>
+        <p class="footer-note">FlyRank AI Fluency Program</p>
+        <div id="flyrank-badge"></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="agent-root"></div>
+
+  <script src="script.js"></script>
+  <script src="agent.js"></script>
+</body>
+</html>
